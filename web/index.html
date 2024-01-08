@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/dart-lang/sdk">
+    <title>Visual Dynamic Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.dart.js"></script>
+</head>
+
+<body>
+
+  <p id="info" style="width: 90%">-- information string --</p>
+  <div>
+      <button id="toggle-playback" width="8em" style="margin: 0 2em 0 1em; padding: 4px 1em">Pause</button>
+      <span style="left-margin: 2em; width: 90%">FPS is <span id="fps">not set</span></span>
+  </div>
+
+  <div id="main-container" style="border-style: solid; border-color: darkblue; margin-left: 10px; width: 1200px; height: 800px">
+      <canvas id="main-canvas" width=1200 height=800></canvas>
+  </div>
+
+  <p>Debug log:</p>
+  <div id="debug-log" style="border-style: solid; border-color: gray; width: 90%; height: 20em; ">
+      debug messages go here<br>
+  </div>
+
+</body>
+</html>
